@@ -1,0 +1,11 @@
+input {
+  width: 100%;
+}
+
+.dg-button {
+  min-width: 80px;
+}
+
+.dg-row {
+  margin: 10px 5px;
+}

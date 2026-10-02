@@ -2,6 +2,7 @@ import FoodItems from './components/FoodItems';
 import ErrorMassage from './components/ErrorMassage';
 import'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"; 
+import Container from './components/Container';
 
 function App() {
 
@@ -13,20 +14,22 @@ function App() {
 
   return (
     <>
-      <h1>Healthy Food</h1>
+      <Container>
+        <h1 className="food-heading">Healthy Food</h1>
 
-      {/* Above have the ternary opration which have helping the cheack foodItem have impty or full */}
+        {/* Above have the ternary opration which have helping the cheack foodItem have impty or full */}
 
-      {/* <ul className="list-group">
+        {/* <ul className="list-group">
 
         {foodItems.map((item) => <li key ={item}className='list-group-item'>{item}</li>)}
 
 
       </ul> */}
 
-      <ErrorMassage items={foodItems}></ErrorMassage>
+        <ErrorMassage items={foodItems}></ErrorMassage>
 
-      <FoodItems items={foodItems}></FoodItems>
+        <FoodItems items={foodItems}></FoodItems>
+      </Container>
     </>
   );
 }
