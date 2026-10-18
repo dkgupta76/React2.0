@@ -1,27 +1,26 @@
-import FoodItems from './components/FoodItems';
-import ErrorMassage from './components/ErrorMassage';
-import'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css"; 
-import Container from './components/Container';
+import FoodItems from "./components/FoodItems";
+import ErrorMassage from "./components/ErrorMassage";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Container from "./components/Container";
 
 function App() {
-
   // let foodItems = [];
 
-   let foodItems = ["Dal", "Green Vegitable", "Roti", "Salad", "Milk"];
+  let foodItems = ["Dal", "Green Vegitable", "Roti", "Salad", "Milk"];
 
   // let emptyMessage =  foodItems.length === 0 ? <h3>I am Still Hungry </h3> : null;
 
   return (
     <>
       <Container>
-        <h1 className="food-heading">Healthy Food</h1>
+        <h1 classNameName="food-heading">Healthy Food</h1>
 
         {/* Above have the ternary opration which have helping the cheack foodItem have impty or full */}
 
-        {/* <ul className="list-group">
+        {/* <ul classNameName="list-group">
 
-        {foodItems.map((item) => <li key ={item}className='list-group-item'>{item}</li>)}
+        {foodItems.map((item) => <li key ={item}classNameName='list-group-item'>{item}</li>)}
 
 
       </ul> */}
@@ -36,12 +35,10 @@ function App() {
 
 export default App;
 
-
-// little notes for the better understanding the concepts 
-
+// little notes for the better understanding the concepts
 
 // 2. Understand each part separately
-// <li key={item} className="list-group-item">{item}</li>
+// <li key={item} classNameName="list-group-item">{item}</li>
 // 1
 
 // <li> — List item
@@ -56,9 +53,9 @@ export default App;
 // {/*  */}
 // 3
 
-// {/* className="list-group-item" — CSS class */}
+// {/* classNameName="list-group-item" — CSS className */}
 
-// {/* Applies styling to the list item. list-group-item is a Bootstrap CSS class. */}
+// {/* Applies styling to the list item. list-group-item is a Bootstrap CSS className. */}
 
 // 4
 
